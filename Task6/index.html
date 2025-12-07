@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio - Home</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">Muhammad Affan Alvi</div>
+        <nav id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <main>
+        <section id="home" class="hero reveal">
+            <div class="hero-content">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Front-end Development • UI Design • Creative Web Solutions</p>
+                <a href="#portfolio" class="btn">View My Work</a>
+
+                <div class="info-bar">
+                    <p id="time-text">Loading time...</p>
+                    <p id="weather-text">Loading weather...</p>
+                </div>
+            </div>
+
+            <img src="fourth.jpg" alt="hero image" class="hero-img">
+        </section>
+
+        <section id="about" class="section reveal">
+            <h2>About Me</h2>
+            <p>
+                I am an IT student passionate about front-end development, UI design,
+                and modern web technologies. I enjoy building responsive and interactive websites.
+            </p>
+        </section>
+
+        <section id="services" class="section reveal">
+            <h2>My Services</h2>
+            <div id="services-container" class="services-container">
+                <!-- Filled by JS -->
+            </div>
+        </section>
+
+        <section id="portfolio" class="section reveal">
+            <h2>My Projects</h2>
+            <div class="portfolio-container">
+                <div class="card">
+                    <img src="first.jpg" alt="Project 1">
+                    <h3>TREGo</h3>
+                    <p>A basic travelling site landing page made with HTML & CSS.</p>
+                </div>
+
+                <div class="card">
+                    <img src="second.jpg" alt="Project 2">
+                    <h3>Sleepiest</h3>
+                    <p>Responsive webpage with small animations mainly using CSS.</p>
+                </div>
+
+                <div class="card">
+                    <img src="three.png" alt="Project 3">
+                    <h3>Opiece</h3>
+                    <p>Interactive page showing characters with JavaScript functionality.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section reveal">
+            <h2>Testimonials</h2>
+            <div id="testimonial-list" class="testimonials-container">
+                <!-- Filled by JS -->
+            </div>
+        </section>
+
+        <section id="contact" class="section reveal">
+            <h2>Contact Me</h2>
+
+            <form id="contact-form" class="contact-form" novalidate>
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Your Email">
+                <textarea id="message" placeholder="Your Message" rows="4"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+            <p id="form-message" class="form-message"></p>
+            <p class="contact-info">Or email me at: <b>affan@gmail.com</b></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Muhammad Affan Alvi — All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
